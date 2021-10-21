@@ -8,7 +8,7 @@ try:
     payload = jwt.decode(
                 token,
                 data,
-                options = {'verify_exp':False,'verify_aud': False,})
+                options = {'verify_exp':True,'verify_aud': False,})
     print("verified and Decoded")
 except:
     print("signature invalid and not decoded")
